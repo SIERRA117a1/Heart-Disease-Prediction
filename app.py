@@ -1,6 +1,6 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-from joblib importload,dump
+from joblib import load,dump
 
 app = Flask(__name__)
 model = load('Final.joblib')
