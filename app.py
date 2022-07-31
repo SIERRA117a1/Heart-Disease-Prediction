@@ -1,9 +1,9 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
-import pickle
+from joblib importload,dump
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = load('Final.joblib')
 
 @app.route('/')
 def home():
