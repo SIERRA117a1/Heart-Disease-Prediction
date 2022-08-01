@@ -16,27 +16,17 @@
 <body>
   <div class="login">
     <h1>Predict Heart Disease</h1>
-    <ul>
-      <li>HighBP: Enter 0 for No and 1 for Yes</li>
-      <li>High Cholestrol: Enter 0 for No and 1 for Yes</li>
-      <li>Do you Smoke? Enter 0 for No and 1 for Yes</li>
-      <li>Did you ever have a stroke? Enter 0 for No and 1 for Yes</li>
-      <li>Rate your General Helath Rate from 1 to 5</li>
-      <li>Do you offten go for a walk? Enter 0 for No and 1 for Yes</li>
-      <li>What is your Age?</li>
-      <li>Do you eat healthy Foods? Enter 0 for No and 1 for Veggies/Fruits and 2 for both Fruits and Veggies</li>
-      <li>Do you have Diabetes? Enter 0 for No and 1 for Yes</li>
-    </ul>
+    
     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}" method="post">
-      <input type="number" name="HighBP" placeholder="High BP" required="required" />
-      <input type="number" name="HighChol" placeholder="High Cholestrol" required="required" />
-      <input type="number" name="Smoker" placeholder="Somker" required="required" />
-      <input type="number" name="Stroke" placeholder="Stroke" required="required" />
-      <input type="number" name="GenHlth" placeholder="Health" required="required" />
-      <input type="number" name="DiffWalk" placeholder="Walks" required="required" />
+      <input type="number" name="HighBP" placeholder="High BP? Enter 0 or 1" required="required" />
+      <input type="number" name="HighChol" placeholder="High Cholestrol? Enter 0 or 1" required="required" />
+      <input type="number" name="Smoker" placeholder="Somker? Enter 0 or 1" required="required" />
+      <input type="number" name="Stroke" placeholder="Stroke? Enter 0 or 1" required="required" />
+      <input type="number" name="GenHlth" placeholder="Health? Rate from 1-5" required="required" />
+      <input type="number" name="DiffWalk" placeholder="Walks? Enter 0 or 1" required="required" />
       <input type="number" name="Age" placeholder="Age" required="required" />
-      <input type="number" name="HealthyFoods" placeholder="Healthy Foods" required="required" />
+      <input type="number" name="HealthyFoods" placeholder="Healthy Foods? Enter 0,1 or 2" required="required" />
       <input type="number" name="Diabetes" placeholder="Diabetes" required="required" />
 
       <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
