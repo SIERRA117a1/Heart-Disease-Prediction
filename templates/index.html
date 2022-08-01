@@ -26,14 +26,7 @@
       <li>What is your Age?</li>
       <li>Do you eat healthy Foods? Enter 0 for No and 1 for Veggies/Fruits and 2 for both Fruits and Veggies</li>
       <li>Do you have Diabetes? Enter 0 for No and 1 for Yes</li>
-
-
     </ul>
-
-    <hr>
-    <hr>
-
-
     <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}" method="post">
       <input type="number" name="HighBP" placeholder="High BP" required="required" />
